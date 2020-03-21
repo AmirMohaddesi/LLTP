@@ -5,11 +5,11 @@ OpenAI Gym Lunar Lander Trajectory Prediction using RNN and ConvAE
 
 OpenAI Gym is a toolkit for developing and comparing reinforcement learning algorithms. Open AI Gym has an environment-agent arrangement. It simply means Gym gives you access to an “agent” which can perform specific actions in an “environment”. In return, it gets the observation and reward as a consequence of performing a particular action in the environment. 
 Following are the available Environments in the Gym:
--Classic control and toy text
--Algorithmic
--Atari
--2D and 3D robots
--Box2D
+- Classic control and toy text
+- Algorithmic
+- Atari
+- 2D and 3D robots
+- Box2D
 
 Lunar Lander is another interesting problem in Box2D environment in OpenAIGym. 
 
