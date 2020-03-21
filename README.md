@@ -18,14 +18,16 @@ As you can see in the picture below, there is one space-ship. The task is to lan
 <a href=""><img src="https://miro.medium.com/max/1346/1*i7lxpgt2K3Q8lgEPJu3_xA.png" title="FVCproductions" alt="FVCproductions"></a>
 
 In this project we present a model to predict the Lunar Lander trajectory. The purpose of this prediction is to figure out next position of the lunar lander which is controlled using random actions from its action space. 
+
 This model uses a convolutional auto encoder to generate a compressed representation of the Lunar Lander picture frames to feed it into a recurrent neural network. The recurrent neural network which has learned possible next positions of the object, will generate the next frame of this LunarLander trajectory.
 
 # Method
 
 Deploying a perfect deep learning approach to solve a problem obviously needs a considerable amount of training data. OpenAI Gym is a perfect tool to generate thousands of trials of real classical Newtonian problems.
+
 We produce 50 episodes of a Lunar Lander and divide them into frames. A preprocessor will crop all of the 400*600 pixels frames into center cropped and resized 64*64 pixels pictures.
-Our method consists of a convolutional auto encoder which takes in 64*64 RGB picture frames and generates a tensor of 50 float numbers. 
-Then, it has a simple RNN 
+
+Our method consists of a convolutional auto encoder which takes in 64*64 RGB picture frames and generates a tensor of 50 float numbers. Then, a simple RNN is responsible for predicting next frame of the given frame by learning the sequence of the encoded frames representations. 
 
 # Experimental Results
 
