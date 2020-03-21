@@ -33,9 +33,9 @@ Our method consists of a convolutional auto encoder which takes in 64*64 RGB pic
 
 The following figure shows how well our autoencoder is compressing our frames and reconstructs it afterwards:
 
-<a href=""><img src="https://github.com/AmirMohaddesi/LLTP/blob/master/Figures/ReconstructedImage1.png?raw=true" alt="FVCproductions"></a>
+<a href=""><img src="https://github.com/AmirMohaddesi/LLTP/blob/master/Figures/ReconstructedImage1.png?raw=true" width="200" height="200" alt="FVCproductions"></a>
 
-<a href=""><img src="https://github.com/AmirMohaddesi/LLTP/blob/master/Figures/ReconstructedImage2.png?raw=true" alt="FVCproductions"></a>
+<a href=""><img src="https://github.com/AmirMohaddesi/LLTP/blob/master/Figures/ReconstructedImage2.png?raw=true" width="200" height="200" alt="FVCproductions"></a>
 
 And this figure shows several predictions of my 
 
