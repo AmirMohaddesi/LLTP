@@ -32,6 +32,7 @@ Our method consists of a convolutional auto encoder which takes in 64*64 RGB pic
 # Experimental Results
 
 
+
 # Conclusion
 
 We could show that a simple RNN is able to learn Newton laws of motion and predict the motion of an object as complex as a spaceship by just observing sequences of frames. 
