@@ -27,15 +27,25 @@ Deploying a perfect deep learning approach to solve a problem obviously needs a 
 
 We produce 50 episodes of a Lunar Lander and divide them into frames. A preprocessor will crop all of the 400\*600 pixels frames into center cropped and resized 64\*64 pixels pictures.
 
-Our method consists of a convolutional auto encoder which takes in 64*64 RGB picture frames and generates a tensor of 50 float numbers. Then, a simple RNN is responsible for predicting next frame of the given frame by learning the sequence of the encoded frames representations. 
+Our method consists of a convolutional auto encoder which takes in 64*64 RGB picture frames and generates a tensor of 50 float numbers. Then, a simple recurrent neural network is responsible for predicting next frame of the given frame by learning the sequence of the encoded frames representations. This RNN has a hidden layer with size of 200 and input and output size of 50.
 
 # Experimental Results
 
-The following figure shows how well our autoencoder is compressing our frames and reconstructs it afterwards:
+The following figure shows how well our autoencoder is compressing our frames and reconstructs it afterwards. The first figure is the preprocessed image and the next one is the reconstructed image:
 
-<a href=""><img src="https://github.com/AmirMohaddesi/LLTP/blob/master/Figures/ReconstructedImage1.png?raw=true" width="200" height="200" alt="FVCproductions"></a>
+<a href=""><img src="https://github.com/AmirMohaddesi/LLTP/blob/master/Figures/ReconstructedImage1.png?raw=true" width="400" height="400" alt="FVCproductions"></a>
 
-<a href=""><img src="https://github.com/AmirMohaddesi/LLTP/blob/master/Figures/ReconstructedImage2.png?raw=true" width="200" height="200" alt="FVCproductions"></a>
+<a href=""><img src="https://github.com/AmirMohaddesi/LLTP/blob/master/Figures/ReconstructedImage2.png?raw=true" width="400" height="400" alt="FVCproductions"></a>
+
+This figure demonstrates a random encoded frame which is 50 random floating numbers.
+
+<a href=""><img src="https://github.com/AmirMohaddesi/LLTP/blob/master/Figures/RandomZDecoded.png?raw=true" width="400" height="400" alt="FVCproductions"></a>
+
+These three figures are respectively, a reconstruction of a random frame, the next figure predicted by out method, and the original next frame which is actually the target. This figure show how well our method is working:
+
+<a href=""><img src="https://github.com/AmirMohaddesi/LLTP/blob/master/Figures/NextFrame1.png?raw=true" width="400" height="400" alt="FVCproductions"></a>
+<a href=""><img src="https://github.com/AmirMohaddesi/LLTP/blob/master/Figures/NextFrame2.png?raw=true" width="400" height="400" alt="FVCproductions"></a>
+<a href=""><img src="https://github.com/AmirMohaddesi/LLTP/blob/master/Figures/NextFrame3.png?raw=true" width="400" height="400" alt="FVCproductions"></a>
 
 And this figure shows several predictions of my 
 
