@@ -1,7 +1,7 @@
-# LLTP
+# LLTP: Lunar Lander Trajectory Prediction
 OpenAI Gym Lunar Lander Trajectory Prediction using RNN and ConvAE
 
-<a href="http://fvcproductions.com"><img src="https://miro.medium.com/max/1346/1*i7lxpgt2K3Q8lgEPJu3_xA.png" title="FVCproductions" alt="FVCproductions"></a>
+<a href=""><img src="https://miro.medium.com/max/1346/1*i7lxpgt2K3Q8lgEPJu3_xA.png" title="FVCproductions" alt="FVCproductions"></a>
 
 <!-- [![FVCproductions](https://avatars1.githubusercontent.com/u/4284691?v=3&s=200)](http://fvcproductions.com) -->
 
