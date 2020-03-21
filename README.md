@@ -25,7 +25,7 @@ This model uses a convolutional auto encoder to generate a compressed representa
 
 Deploying a perfect deep learning approach to solve a problem obviously needs a considerable amount of training data. OpenAI Gym is a perfect tool to generate thousands of trials of real classical Newtonian problems.
 
-We produce 50 episodes of a Lunar Lander and divide them into frames. A preprocessor will crop all of the 400*600 pixels frames into center cropped and resized 64*64 pixels pictures.
+We produce 50 episodes of a Lunar Lander and divide them into frames. A preprocessor will crop all of the 400\*600 pixels frames into center cropped and resized 64\*64 pixels pictures.
 
 Our method consists of a convolutional auto encoder which takes in 64*64 RGB picture frames and generates a tensor of 50 float numbers. Then, a simple RNN is responsible for predicting next frame of the given frame by learning the sequence of the encoded frames representations. 
 
